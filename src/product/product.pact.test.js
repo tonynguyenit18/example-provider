@@ -60,9 +60,9 @@ describe("Pact Verification", () => {
       //     ["10", new Product("10", "CREDIT_CARD", "28 Degrees", "v1")],
       //   ]);
       // },
-      // "a product with ID 11 does not exist": () => {
-      //   controller.repository.products = new Map();
-      // },
+      "a product with ID 11 does not exist": () => {
+        controller.repository.products = new Map();
+      },
     };
 
     const requestFilter = (req, res, next) => {
